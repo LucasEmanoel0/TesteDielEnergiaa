@@ -1,0 +1,62 @@
+section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+
+.taskContainer{
+    width: 400px;
+    background-color: #555555;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+ 
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.taskContainer button{
+    height: 40px;
+    width: 100px;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s ease-in-out;
+}
+.taskContainer button:hover{
+    transform: scale(1.1)
+
+}
+.buttonEdite{
+    background-color: green;
+}
+.buttonRemove{
+    background-color: red;
+}
+.titleContainer{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    color: white;
+}
+
+@media (max-width: 390px) {
+   
+    .taskContainer{
+        width: 350px;
+    }
+  }
